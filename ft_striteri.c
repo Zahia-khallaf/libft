@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ekhallaf <ekhallaf@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abounade <abounade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 02:04:50 by ekhallaf          #+#    #+#             */
-/*   Updated: 2024/11/09 22:42:51 by ekhallaf         ###   ########.fr       */
+/*   Updated: 2024/11/11 09:40:42 by abounade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ void	to_upper_by_index(unsigned int i, char *c)
 	if (i % 2 == 0 && *c >= 'a' && *c <= 'z')
 		*c -= 32;
 }
-int	main(void)
-{
-	char str[] = "Hello, World!";
-	ft_striteri(str, to_upper_by_index);
-	printf("%s\n", str);
-}
+// int	main(void)
+// {
+// 	char str[] = "Hello, World!";
+// 	ft_striteri(str, to_upper_by_index);
+// 	printf("%s\n", str);
+// }

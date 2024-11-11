@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ekhallaf <ekhallaf@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abounade <abounade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 20:17:58 by ekhallaf          #+#    #+#             */
-/*   Updated: 2024/11/11 16:19:27 by ekhallaf         ###   ########.fr       */
+/*   Updated: 2024/11/11 09:51:02 by abounade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ void	*ft_memmove(void *destination, const void *source, size_t n)
 	const char	*src;
 	size_t		i;
 
+	if (source == destination || n == 0)
+		return (destination);
 	dest = (char *)destination;
 	src = (const char *)source;
 	i = 0;
-	if (src == dest || n == 0)
-		return (destination);
 	if (dest > src)
 	{
 		while (n > 0)
@@ -33,9 +33,9 @@ void	*ft_memmove(void *destination, const void *source, size_t n)
 	}
 	else
 	{
-		while (i++ < n)
+		while (i < n)
 		{
-			dest[i] = src[i];
+			dest[i++] = *src++;
 		}
 	}
 	return (destination);

@@ -3,19 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ekhallaf <ekhallaf@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abounade <abounade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 14:40:12 by ekhallaf          #+#    #+#             */
-/*   Updated: 2024/11/11 15:43:25 by ekhallaf         ###   ########.fr       */
+/*   Updated: 2024/11/11 10:16:27 by abounade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	nb;

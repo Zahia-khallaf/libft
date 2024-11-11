@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ekhallaf <ekhallaf@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abounade <abounade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 16:35:23 by ekhallaf          #+#    #+#             */
-/*   Updated: 2024/11/10 20:49:44 by ekhallaf         ###   ########.fr       */
+/*   Updated: 2024/11/11 10:20:45 by abounade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	i = 0;
-	result = malloc(sizeof(char) * (strlen(s) + 1));
+	result = malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!result)
 		return (NULL);
 	while (s[i] != '\0')
@@ -31,12 +31,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
-char	to_upper_by_index(unsigned int i, char c)
-{
-	if (i % 2 == 0 && c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
-}
+// char	to_upper_by_index(unsigned int i, char c)
+// {
+// 	if (i % 2 == 0 && c >= 'a' && c <= 'z')
+// 		return (c - 32);
+// 	return (c);
+// }
 
 // #include <stdio.h>
 

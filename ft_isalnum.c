@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ekhallaf <ekhallaf@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abounade <abounade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:32:16 by ekhallaf          #+#    #+#             */
-/*   Updated: 2024/11/11 22:18:47 by ekhallaf         ###   ########.fr       */
+/*   Updated: 2024/11/11 09:39:03 by abounade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-int main()
-{
-	int i = 255;
-	printf("%d\n", ft_isalnum(i));
-}
+// int main()
+// {
+// 	int i = 255;
+// 	printf("%d\n", ft_isalnum(i));
+// }

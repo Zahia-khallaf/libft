@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ekhallaf <ekhallaf@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abounade <abounade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 10:35:25 by ekhallaf          #+#    #+#             */
-/*   Updated: 2024/11/11 21:26:45 by ekhallaf         ###   ########.fr       */
+/*   Updated: 2024/11/11 10:02:11 by abounade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,20 @@
 void	*ft_calloc(size_t num, size_t size)
 {
 	char	*tmp;
-	
-	//(size_t)-1
-	//~(size_t)0
+
 	tmp = malloc((num * (size)));
 	if (!tmp)
 	{
 		return (NULL);
 	}
-	ft_bzero(tmp, size);
+	ft_bzero(tmp, size * num);
 	return (tmp);
 }
-int main()
-{
-    unsigned int a = 0;
-	printf("%zu", ~(size_t)0);
-}
+// int main()
+// {
+//     unsigned int a = 0;
+// 	printf("%zu", ~(size_t)0);
+// }
 // int main()
 // {
 //     int i = 0;

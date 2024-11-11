@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ekhallaf <ekhallaf@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abounade <abounade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 14:42:20 by ekhallaf          #+#    #+#             */
-/*   Updated: 2024/11/11 22:12:33 by ekhallaf         ###   ########.fr       */
+/*   Updated: 2024/11/11 09:39:39 by abounade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,18 +101,18 @@ char	**ft_split(char const *s, char c)
 	return (split);
 }
 
-int	main(void)
-{
-	int		i;
-	char	str[] = "hhuhjhb hkb jkjb ";
-	char	**res;
+// int	main(void)
+// {
+// 	int		i;
+// 	char	str[] = "hhuhjhb hkb jkjb ";
+// 	char	**res;
 
-	i = 0;
-	res = ft_split(str, ' ');
-	while (res[i])
-	{
-		printf("'%s'\n", res[i]);
-		i++;
-	}
-	printf("'%s'\n", res[3]);
-}
+// 	i = 0;
+// 	res = ft_split(str, ' ');
+// 	while (res[i])
+// 	{
+// 		printf("'%s'\n", res[i]);
+// 		i++;
+// 	}
+// 	printf("'%s'\n", res[3]);
+// }
